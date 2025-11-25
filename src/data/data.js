@@ -1,0 +1,88 @@
+const data = [
+   {
+        id:1,
+        title:"DeFi Protocol",
+        image:"img/project/project-1.jpg",
+        category: "Smart Contract",
+        details:"Yield Farming Platform",
+    },
+    {
+        id:2,
+        title:"NFT Marketplace",
+        image:"img/project/project-2.jpg",
+        category: "Web3",
+        details:"Decentralized Digital Assets",
+    },
+    {
+        id:3,
+        title:"Wallet Integration",
+        image:"img/project/project-3.jpg",
+        category: "Web3",
+        details:"Multi-Chain Crypto Wallet",
+    },
+    {
+        id:4,
+        title:"Token Creation",
+        image:"img/project/project-4.jpg",
+        category: "Smart Contract",
+        details:"ERC-20 & ERC-721 Tokens",
+    },
+    {
+        id:5,
+        title:"DAO Platform",
+        image:"img/project/project-5.jpg",
+        category: "Governance",
+        details:"Decentralized Organization",
+    },
+    {
+        id:6,
+        title:"Staking Protocol",
+        image:"img/project/project-6.jpg",
+        category: "DeFi",
+        details:"Liquidity & Rewards System",
+    },
+    // {
+    //     id:7,
+    //     title:"3D Design",
+    //     image:"img/project/project-5.jpg",
+    //     category: "Graphic",
+    //     details:"Low Poly Base Mesh",
+    // },
+    // {
+    //     id:8,
+    //     title:"3D Design",
+    //     image:"img/project/project-1.jpg",
+    //     category: "Graphic",
+    //     details:"Low Poly Base Mesh",
+    // },
+    // {
+    //     id:9,
+    //     title:"UI Kit",
+    //     image:"img/project/project-2.jpg",
+    //     category: "UI",
+    //     details:"Low Poly Base Mesh",
+    // },
+    // {
+    //     id:10,
+    //     title:"UI Kit",
+    //     image:"img/project/project-4.jpg",
+    //     category: "UI",
+    //     details:"Low Poly Base Mesh",
+    // },
+    // {
+    //     id:11,
+    //     title:"App",
+    //     image:"img/project/project-3.jpg",
+    //     category: "App",
+    //     details:"Mobile Crypto Wallet",
+    // },
+    // {
+    //     id:12,
+    //     title:"App",
+    //     image:"img/project/project-1.jpg",
+    //     category: "App",
+    //     details:"Mobile Crypto Wallet",
+    // },
+];
+
+export default data;
