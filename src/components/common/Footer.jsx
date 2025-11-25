@@ -22,23 +22,18 @@ function Footer(props) {
                   </p>
                   <ul className="social-media-icons">
                     <li>
-                      <a href="https://www.facebook.com/">
+                      <a href="https://www.facebook.com/XTechGroupOfficial">
                         <i className="fab fa-facebook-f" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.twitter.com/">
-                        <i className="fab fa-twitter" />
+                      <a href="http://t.me/heisenberg7sf">
+                        <i className="fab fa-telegram" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.pinterest.com/">
-                        <i className="fab fa-pinterest-p" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/">
-                        <i className="fab fa-instagram" />
+                      <a href="https://zalo.me/0848868598">
+                        <i className="fab fa-phone" />
                       </a>
                     </li>
                   </ul>

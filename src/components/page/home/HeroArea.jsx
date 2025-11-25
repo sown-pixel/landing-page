@@ -11,9 +11,9 @@ function HeroArea() {
         </div>
         <div className="verticale-social">
           <ul className="vertical-media">
-            <li><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><a href="https://www.instagram.com/">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+            <li><a href="https://www.facebook.com/XTechGroupOfficial">Facebook</a></li>
+            <li><a href="http://t.me/heisenberg7sf">Telegram</a></li>
+            <li><a href="https://zalo.me/0848868598">Zalo</a></li>
           </ul>
         </div>
         <div className="hero-wrapper">
