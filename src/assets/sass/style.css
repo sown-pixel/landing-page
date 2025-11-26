@@ -698,7 +698,7 @@ video {
 /*================================
     Responsive mobile menu css
 =================================*/
-@mediaonly screen and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
   header .main-nav {
     position: fixed;
     top: 0;
@@ -897,7 +897,7 @@ header {
   display: inline-block;
 }
 .logo a img {
-  height: 45px;
+  width: 170px;
 }
 @media only screen and (max-width: 1199px) {
   .logo a img {

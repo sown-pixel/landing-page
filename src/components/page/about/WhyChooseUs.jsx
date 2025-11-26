@@ -15,10 +15,10 @@ function WhyChooseUs() {
                   <img src={process.env.PUBLIC_URL + "/img/why-2.jpg"} alt="why-choose images" />
                   <img src={process.env.PUBLIC_URL + "/img/why-3.jpg"} alt="why-choose images" />
                 </div>
-                <div className="years">
+                {/* <div className="years">
                   <h5>4+</h5>
                   <span>Years</span>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-6">

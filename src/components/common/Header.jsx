@@ -6,7 +6,6 @@ function Header() {
   const [isSticky, setSticky] = useState(false);
   const ref = useRef(null);
 
-
   /*---------header top Sticky event----------*/
   const handleStickyHeader = () => {
     if (ref.current) {
@@ -14,7 +13,6 @@ function Header() {
     }
   };
 
- 
   /*---------menu button event----------*/
   const handleSidbarMenu = () => {
     if (sidebar === false || sidebar === 0) {
@@ -24,7 +22,7 @@ function Header() {
     }
   };
 
-/*---------add event scroll top----------*/
+  /*---------add event scroll top----------*/
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   /*---------Using reducer mange the active or inactive menu----------*/
@@ -83,17 +81,18 @@ function Header() {
                   alt="images"
                 />
               </Link>
-              <div className="remove" onClick={handleSidbarMenu}>
+              {/* <div className="remove" onClick={handleSidbarMenu}>
                 <i className="bi bi-plus-lg" />
-              </div>
+              </div> */}
             </div>
             <ul>
               <li>
                 <NavLink
                   to={`/home`}
                   onClick={() => {
-                    dispatch({ type: "homeOne" }); 
+                    dispatch({ type: "homeOne" });
                     scrollTop();
+                    handleSidbarMenu()
                   }}
                 >
                   Home
@@ -103,8 +102,9 @@ function Header() {
                 <NavLink
                   to={`${process.env.PUBLIC_URL}/about`}
                   onClick={() => {
-                    dispatch({ type: "about" }); 
+                    dispatch({ type: "about" });
                     scrollTop();
+                    handleSidbarMenu()
                   }}
                 >
                   About Us
@@ -116,6 +116,7 @@ function Header() {
                   onClick={() => {
                     dispatch({ type: "service" });
                     scrollTop();
+                    handleSidbarMenu()
                   }}
                 >
                   Service
@@ -263,7 +264,11 @@ function Header() {
               <li>
                 <NavLink
                   to={`${process.env.PUBLIC_URL}/contact`}
-                  onClick={scrollTop}
+                  onClick={() => {
+                    dispatch({ type: "contact" });
+                    scrollTop();
+                    handleSidbarMenu()
+                  }}
                 >
                   Contact Us
                 </NavLink>
@@ -275,7 +280,10 @@ function Header() {
                 <div className="line-2"></div>
                 <Link
                   to={`${process.env.PUBLIC_URL}/contact`}
-                  onClick={scrollTop}
+                  onClick={() => {
+                    scrollTop();
+                    handleSidbarMenu()
+                  }}
                 >
                   Get A Quote
                 </Link>
@@ -298,7 +306,11 @@ function Header() {
             </div>
           </div>
           <div className="mobile-menu">
-            <Link to="#" onClick={handleSidbarMenu} className={"cross-btn"}>
+            <Link
+              to="#"
+              onClick={handleSidbarMenu}
+              className={sidebar === 1 ? "cross-btn h-active" : "cross-btn"}
+            >
               <span className="cross-top" />
               <span className="cross-middle" />
               <span className="cross-bottom" />

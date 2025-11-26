@@ -31,14 +31,14 @@ function AboutArea(props) {
                 <div className="banner-1">
                   <img src={process.env.PUBLIC_URL + '/img/about-baner-1.jpg'} alt="about-images" />
                 </div>
-                <div className="banner-2">
+                {/* <div className="banner-2">
                   <img src={process.env.PUBLIC_URL + '/img/about-baner-2.jpg'}  alt="about-images" />
                   <div className="banner2-inner">
                     <div className="play">
                       <div className="video-popup" onClick={()=>setOpen(true)} ><i className="fas fa-play" /></div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
