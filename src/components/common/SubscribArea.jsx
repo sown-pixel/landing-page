@@ -33,10 +33,10 @@ function SubscribArea() {
     <>
     {true && (
         <Alert
-          type={"success"}
-          message={"✓ Subscribed successfully! We'll get back to you soon."}
+          type={alert.type}
+          message={alert.message}
           onClose={() => setAlert(null)}
-          duration={3000}
+          duration={5000}
         />
       )}
      <section className="subscribe-newsletter sec-mar-top">
