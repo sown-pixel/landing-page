@@ -11,6 +11,10 @@ function Header() {
     const isDesktop = window.innerWidth >= 1200;
     if (ref.current && isDesktop) {
       setSticky(ref.current.getBoundingClientRect().top <= 0);
+    } else if (!isDesktop) {
+      setSticky(true);
+    } else {
+      setSticky(false);
     }
   };
 
@@ -51,9 +55,12 @@ function Header() {
     new WOW.WOW({
       live: false,
     }).init();
+    handleStickyHeader();
     window.addEventListener("scroll", handleStickyHeader);
+    window.addEventListener("resize", handleStickyHeader);
     return () => {
       window.removeEventListener("scroll", () => handleStickyHeader);
+      window.removeEventListener("resize", handleStickyHeader);
     };
   }, []);
 

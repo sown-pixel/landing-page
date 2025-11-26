@@ -33,7 +33,7 @@ function Footer(props) {
                     </li>
                     <li>
                       <a href="https://zalo.me/0848868598">
-                        <i className="fab fa-phone" />
+                        <i class="fas fa-phone"></i>
                       </a>
                     </li>
                   </ul>
