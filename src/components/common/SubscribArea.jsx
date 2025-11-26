@@ -31,7 +31,7 @@ function SubscribArea() {
   };
   return (
     <>
-    {true && (
+    {alert && (
         <Alert
           type={alert.type}
           message={alert.message}
