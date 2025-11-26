@@ -8,7 +8,8 @@ function Header() {
 
   /*---------header top Sticky event----------*/
   const handleStickyHeader = () => {
-    if (ref.current) {
+    const isDesktop = window.innerWidth >= 1200;
+    if (ref.current && isDesktop) {
       setSticky(ref.current.getBoundingClientRect().top <= 0);
     }
   };
